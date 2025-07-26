@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUp Game Mobile Terpercaya - Beli Diamond, UC, Voucher Game Online Murah</title>
+    <meta name="description" content="Top up game mobile terpercaya dan termurah di Indonesia. Beli diamond Mobile Legends, UC PUBG, voucher Free Fire, Genshin Impact dengan proses cepat dan aman. Tersedia berbagai metode pembayaran.">
+    <meta name="keywords" content="top up game, diamond mobile legends, uc pubg, voucher free fire, top up murah, game online, mobile gaming, indonesia">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .game-card:hover .game-overlay {
+            opacity: 1;
+        }
+        .payment-option:checked + label {
+            border-color: #1e40af;
+            background-color: #eff6ff;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">🎮</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">GameTopUp</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Beranda</a>
+                    <a href="#games" class="text-gray-700 hover:text-primary transition-colors">Game</a>
+                    <a href="#prices" class="text-gray-700 hover:text-primary transition-colors">Harga</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Kontak</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-primary transition-colors">Beranda</a>
+                <a href="#games" class="block py-2 text-gray-700 hover:text-primary transition-colors">Game</a>
+                <a href="#prices" class="block py-2 text-gray-700 hover:text-primary transition-colors">Harga</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-primary transition-colors">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Top Up Game Mobile Terpercaya</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Dapatkan diamond, UC, voucher game favorit Anda dengan harga termurah dan proses tercepat di Indonesia. Kami melayani top up untuk semua game mobile populer dengan sistem pembayaran yang aman dan terpercaya.</p>
+            <button onclick="scrollToSection('games')" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors pulse-animation">
+                Mulai Top Up Sekarang
+            </button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Mengapa Memilih GameTopUp?</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">⚡</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Proses Cepat</h4>
+                    <p class="text-gray-600">Top up instan dalam hitungan detik. Nikmati pengalaman bermain tanpa perlu menunggu lama.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">💰</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Harga Termurah</h4>
+                    <p class="text-gray-600">Kami menawarkan harga terbaik di pasaran dengan berbagai promo dan diskon menarik setiap harinya.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🔒</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Aman & Terpercaya</h4>
+                    <p class="text-gray-600">Transaksi dijamin aman dengan sistem pembayaran terpercaya dan layanan pelanggan 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Games -->
+    <section id="games" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Game Populer</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Game 1: Mobile Legends -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Mobile Legends')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns=img src="https://images.app.goo.gl/w962VCaxvmiYZQTD6"
+                            <defs>
+                                <linearGradient id="mlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1A237E" />
+                                    <stop offset="100%" stop-color="#3949AB" />
+                                </linearGradient>
+                                <radialGradient id="mlShine" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                    <stop offset="0%" stop-color="#FFC107" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#FFC107" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#mlGradient)" />
+                            <circle cx="50" cy="40" r="22" fill="#FFC107" />
+                            <circle cx="50" cy="40" r="15" fill="url(#mlShine)" />
+                            <path d="M30,65 L70,65 L50,90 Z" fill="#FFC107" />
+                            <path d="M40,65 L60,65 L50,80 Z" fill="#FFD54F" />
+                            <path d="M50,30 L55,45 L40,45 Z" fill="#1A237E" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Mobile Legends</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 2: PUBG Mobile -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('PUBG Mobile')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="pubgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#F57F17" />
+                                    <stop offset="100%" stop-color="#FFB300" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#pubgGradient)" />
+                            <circle cx="50" cy="50" r="25" fill="#000000" />
+                            <circle cx="50" cy="50" r="20" fill="#F57F17" />
+                            <circle cx="50" cy="50" r="15" fill="#000000" />
+                            <path d="M40,30 L60,30 L60,70 L40,70 Z" fill="#000000" />
+                            <path d="M30,40 L70,40 L70,60 L30,60 Z" fill="#000000" />
+                            <circle cx="50" cy="50" r="8" fill="#F57F17" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">PUBG Mobile</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 3: Free Fire -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Free Fire')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="ffGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#B71C1C" />
+                                    <stop offset="100%" stop-color="#F44336" />
+                                </linearGradient>
+                                <radialGradient id="ffFlame" cx="50%" cy="60%" r="50%" fx="50%" fy="50%">
+                                    <stop offset="0%" stop-color="#FFEB3B" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#FF9800" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#ffGradient)" />
+                            <path d="M50,20 C60,40 70,50 50,80 C30,50 40,40 50,20 Z" fill="url(#ffFlame)" />
+                            <path d="M50,30 C55,40 60,45 50,65 C40,45 45,40 50,30 Z" fill="#FFEB3B" />
+                            <circle cx="50" cy="40" r="5" fill="#FFFFFF" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Free Fire</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 4: Genshin Impact -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Genshin Impact')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="genshinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1A237E" />
+                                    <stop offset="100%" stop-color="#7986CB" />
+                                </linearGradient>
+                                <radialGradient id="genshinGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#BBDEFB" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#genshinGradient)" />
+                            <circle cx="50" cy="50" r="30" fill="url(#genshinGlow)" />
+                            <path d="M50,20 L65,50 L50,80 L35,50 Z" fill="#FFFFFF" />
+                            <path d="M35,50 L50,35 L65,50 L50,65 Z" fill="#1A237E" />
+                            <circle cx="50" cy="50" r="5" fill="#FFFFFF" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Genshin Impact</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 5: Call of Duty Mobile -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Call of Duty Mobile')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="codGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#212121" />
+                                    <stop offset="100%" stop-color="#424242" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#codGradient)" />
+                            <rect x="25" y="40" width="50" height="20" fill="#FFC107" />
+                            <path d="M30,35 L70,35 L70,65 L30,65 Z" fill="none" stroke="#FFC107" stroke-width="2" />
+                            <circle cx="50" cy="50" r="12" fill="#212121" />
+                            <path d="M45,45 L55,55 M45,55 L55,45" stroke="#FFC107" stroke-width="2" />
+                            <text x="30" y="30" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">CALL OF DUTY</text>
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Call of Duty Mobile</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 6: Valorant -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Valorant')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="valorantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF4655" />
+                                    <stop offset="100%" stop-color="#FF8A80" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="#0F1923" />
+                            <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="url(#valorantGradient)" />
+                            <path d="M40,40 L60,40 L60,60 L40,60 Z" fill="#0F1923" />
+                            <path d="M30,30 L50,50 L30,70 Z" fill="#FFFFFF" />
+                            <path d="M70,30 L50,50 L70,70 Z" fill="#FFFFFF" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Valorant</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 7: Apex Legends -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Apex Legends')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="apexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#B71C1C" />
+                                    <stop offset="100%" stop-color="#D32F2F" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="#000000" />
+                            <path d="M50,20 L80,70 L20,70 Z" fill="url(#apexGradient)" />
+                            <path d="M50,30 L70,65 L30,65 Z" fill="#000000" />
+                            <path d="M50,40 L60,60 L40,60 Z" fill="#FFFFFF" />
+                            <circle cx="50" cy="45" r="5" fill="#000000" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Apex Legends</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 8: League of Legends -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('League of Legends')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="lolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#091428" />
+                                    <stop offset="100%" stop-color="#0A323C" />
+                                </linearGradient>
+                                <radialGradient id="lolGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                    <stop offset="0%" stop-color="#C89B3C" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#C89B3C" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#lolGradient)" />
+                            <circle cx="50" cy="50" r="30" fill="url(#lolGlow)" />
+                            <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="none" stroke="#C89B3C" stroke-width="3" />
+                            <path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="#C89B3C" stroke-width="2" />
+                            <circle cx="50" cy="50" r="10" fill="#C89B3C" />
+                            <circle cx="50" cy="50" r="5" fill="#091428" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">League of Legends</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 9: Ragnarok M -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Ragnarok M')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="ragnarokGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#2E7D32" />
+                                    <stop offset="100%" stop-color="#4CAF50" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#ragnarokGradient)" />
+                            <circle cx="50" cy="40" r="20" fill="#FFFFFF" />
+                            <path d="M30,60 L70,60 L50,90 Z" fill="#FFFFFF" />
+                            <path d="M40,30 L60,30 L60,50 L40,50 Z" fill="#2E7D32" />
+                            <path d="M45,35 L55,35 L55,45 L45,45 Z" fill="#FFFFFF" />
+                            <path d="M40,65 L60,65 L50,80 Z" fill="#2E7D32" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Ragnarok M</h4>
+                    </div>
+                </div>
+                
+                <!-- Game 10: Honkai Impact -->
+                <div class="game-card relative rounded-lg overflow-hidden shadow-md cursor-pointer" onclick="openTopUpModal('Honkai Impact')">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="honkaiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4A148C" />
+                                    <stop offset="100%" stop-color="#7B1FA2" />
+                                </linearGradient>
+                                <radialGradient id="honkaiGlow" cx="50%" cy="40%" r="50%" fx="50%" fy="40%">
+                                    <stop offset="0%" stop-color="#E1BEE7" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#9C27B0" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="100" height="100" fill="url(#honkaiGradient)" />
+                            <path d="M30,30 L70,30 L50,70 Z" fill="url(#honkaiGlow)" />
+                            <path d="M40,40 L60,40 L50,60 Z" fill="#FFFFFF" />
+                            <circle cx="50" cy="35" r="8" fill="#FFFFFF" />
+                            <circle cx="50" cy="35" r="4" fill="#4A148C" />
+                            <path d="M45,75 L55,75 L50,85 Z" fill="#FFFFFF" />
+                        </svg>
+                    </div>
+                    <div class="game-overlay absolute inset-0 bg-primary bg-opacity-80 opacity-0 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Top Up Sekarang</span>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h4 class="font-semibold text-center">Honkai Impact</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price List -->
+    <section id="prices" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Daftar Harga</h3>
+            
+            <div class="mb-8">
+                <div class="flex justify-center space-x-4 mb-6">
+                    <button class="game-tab px-4 py-2 rounded-lg bg-primary text-white" data-game="ml">Mobile Legends</button>
+                    <button class="game-tab px-4 py-2 rounded-lg bg-gray-200 text-gray-700" data-game="pubg">PUBG Mobile</button>
+                    <button class="game-tab px-4 py-2 rounded-lg bg-gray-200 text-gray-700" data-game="ff">Free Fire</button>
+                </div>
+                
+                <!-- Mobile Legends Prices -->
+                <div id="ml-prices" class="game-prices">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">86 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 20.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">172 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 39.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">257 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 58.500</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">344 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 78.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">429 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 97.500</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">514 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 116.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">706 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 156.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">878 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 195.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PUBG Mobile Prices -->
+                <div id="pubg-prices" class="game-prices hidden">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">60 UC</h5>
+                            <p class="text-primary font-bold">Rp 15.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">325 UC</h5>
+                            <p class="text-primary font-bold">Rp 75.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">660 UC</h5>
+                            <p class="text-primary font-bold">Rp 150.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">1800 UC</h5>
+                            <p class="text-primary font-bold">Rp 375.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">3850 UC</h5>
+                            <p class="text-primary font-bold">Rp 750.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">8100 UC</h5>
+                            <p class="text-primary font-bold">Rp 1.500.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Free Fire Prices -->
+                <div id="ff-prices" class="game-prices hidden">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">100 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 15.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">310 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 45.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">520 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 75.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">1060 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 150.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">2180 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 300.000</p>
+                        </div>
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow text-center">
+                            <h5 class="font-semibold mb-2">5600 Diamonds</h5>
+                            <p class="text-primary font-bold">Rp 750.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Cara Pemesanan</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">1</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Pilih Game</h4>
+                    <p class="text-gray-600">Pilih game yang ingin Anda top up dari daftar game yang tersedia.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">2</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Isi Data</h4>
+                    <p class="text-gray-600">Masukkan ID game dan server Anda dengan benar untuk memastikan top up berhasil.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">3</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Pilih Nominal</h4>
+                    <p class="text-gray-600">Pilih jumlah diamond, UC, atau voucher yang ingin Anda beli.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">4</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Bayar & Terima</h4>
+                    <p class="text-gray-600">Selesaikan pembayaran dan terima top up Anda dalam hitungan detik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Testimoni Pelanggan</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">Rh</div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">rahil</h5>
+                            <div class="flex text-yellow-400">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Proses top up sangat cepat, hanya dalam hitungan detik diamond sudah masuk ke akun ML saya. Harganya juga lebih murah dibanding tempat lain."</p>
+                </div>
+                <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">Az</div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">azril</h5>
+                            <div class="flex text-yellow-400">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Proses nya cepat dan harga terjangkau ramah di kantong 🥰🥰"</p>
+                </div>
+                <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">Al</div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">Alfi</h5>
+                            <div class="flex text-yellow-400">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                     <p class="text-gray-600">"Murah bet coo geloo 🤬🤬"</p>
+                </div>
+                <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">k</div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">Kinndi</h5>
+                            <div class="flex text-yellow-400">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Saya sudah berlangganan di GameTopUp selama 6 bulan dan tidak pernah mengalami masalah. Customer service-nya juga sangat responsif."</p>
+                </div>
+                <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">Rv</div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">revan</h5>
+                            <div class="flex text-yellow-400">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Top up UC PUBG sangat cepat dan aman. Harga juga bersaing dengan website lain. Rekomendasi banget buat para gamers!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Hubungi Kami</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-semibold mb-6">Kirim Pesan</h4>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">Kirim Pesan</button>
+                    </form>
+                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                        Pesan Anda telah terkirim! Kami akan segera menghubungi Anda.
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-semibold mb-6">Informasi Kontak</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white mr-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Telepon</h5>
+                                <p class="text-gray-600">+62 856-7330-358</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white mr-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Email</h5>
+                                <p class="text-gray-600">info@gametopup.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white mr-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Alamat</h5>
+                                <p class="text-gray-600">Jl.camat kanang No.13,pabuaran,kec.Bojong gede</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h5 class="font-semibold mb-4">Ikuti Kami</h5>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-primary font-bold text-xl">🎮</span>
+                        </div>
+                        <h4 class="text-2xl font-bold">GameTopUp</h4>
+                    </div>
+                    <p class="text-gray-300">Platform top up game terpercaya dan termurah di Indonesia. Proses cepat, aman, dan tersedia 24/7.</p>
+                </div>
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">Game Populer</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Mobile Legends</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">PUBG Mobile</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Free Fire</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Genshin Impact</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Call of Duty Mobile</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">Informasi</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Cara Pembelian</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">Metode Pembayaran</h5>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="bg-white p-2 rounded-md flex items-center justify-center">
+                            <span class="text-primary font-bold text-xs">DANA</span>
+                        </div>
+                        <div class="bg-white p-2 rounded-md flex items-center justify-center">
+                            <span class="text-primary font-bold text-xs">OVO</span>
+                        </div>
+                        <div class="bg-white p-2 rounded-md flex items-center justify-center">
+                            <span class="text-primary font-bold text-xs">GOPAY</span>
+                        </div>
+                        <div class="bg-white p-2 rounded-md flex items-center justify-center">
+                            <span class="text-primary font-bold text-xs">BCA</span>
+                        </div>
+                        <div class="bg-white p-2 rounded-md flex items-center justify-center">
+                            <span class="text-primary font-bold text-xs">BNI</span>
+                        </div>
+                        <div class="bg-white p-2 rounded-md flex items-center justify-center">
+                            <span class="text-primary font-bold text-xs">BRI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2025 GameTopUp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Top Up Modal -->
+    <div id="topUpModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg w-full max-w-md mx-4 overflow-hidden">
+            <div class="bg-primary text-white p-4">
+                <div class="flex justify-between items-center">
+                    <h3 id="modalGameTitle" class="text-xl font-bold">Top Up Mobile Legends</h3>
+                    <button id="closeModal" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="p-6">
+                <form id="topUpForm">
+                    <div class="mb-4">
+                        <label for="userId" class="block text-gray-700 mb-2">User ID</label>
+                        <input type="text" id="userId" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required placeholder="Masukkan User ID">
+                    </div>
+                    <div class="mb-4">
+                        <label for="server" class="block text-gray-700 mb-2">Server</label>
+                        <input type="text" id="server" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Masukkan Server (opsional)">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Pilih Nominal</label>
+                        <div class="grid grid-cols-2 gap-3" id="nominalOptions">
+                            <div class="relative">
+                                <input type="radio" name="nominal" id="nominal1" value="small" class="payment-option absolute opacity-0">
+                                <label for="nominal1" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">86 Diamonds</div>
+                                    <div class="text-primary font-bold">Rp 20.000</div>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <input type="radio" name="nominal" id="nominal2" value="medium" class="payment-option absolute opacity-0">
+                                <label for="nominal2" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">172 Diamonds</div>
+                                    <div class="text-primary font-bold">Rp 39.000</div>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <input type="radio" name="nominal" id="nominal3" value="large" class="payment-option absolute opacity-0">
+                                <label for="nominal3" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">257 Diamonds</div>
+                                    <div class="text-primary font-bold">Rp 58.500</div>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <input type="radio" name="nominal" id="nominal4" value="xlarge" class="payment-option absolute opacity-0">
+                                <label for="nominal4" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">344 Diamonds</div>
+                                    <div class="text-primary font-bold">Rp 78.000</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Metode Pembayaran</label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="relative">
+                                <input type="radio" name="payment" id="payment1" value="dana" class="payment-option absolute opacity-0">
+                                <label for="payment1" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">DANA</div>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <input type="radio" name="payment" id="payment2" value="ovo" class="payment-option absolute opacity-0">
+                                <label for="payment2" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">OVO</div>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <input type="radio" name="payment" id="payment3" value="gopay" class="payment-option absolute opacity-0">
+                                <label for="payment3" class="block border border-gray-300 rounded-lg p-3 text-center cursor-pointer">
+                                    <div class="font-semibold">GOPAY</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">Bayar Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg w-full max-w-md mx-4 overflow-hidden">
+            <div class="p-6 text-center">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Pembayaran Berhasil!</h3>
+                <p class="text-gray-600 mb-6">Top up Anda sedang diproses dan akan segera masuk ke akun game Anda.</p>
+                <button id="closeSuccessModal" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">Kembali ke Beranda</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Game Tab Switching
+        const gameTabs = document.querySelectorAll('.game-tab');
+        const gamePrices = document.querySelectorAll('.game-prices');
+        
+        gameTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Reset all tabs
+                gameTabs.forEach(t => {
+                    t.classList.remove('bg-primary', 'text-white');
+                    t.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                
+                // Activate clicked tab
+                tab.classList.remove('bg-gray-200', 'text-gray-700');
+                tab.classList.add('bg-primary', 'text-white');
+                
+                // Hide all price lists
+                gamePrices.forEach(p => {
+                    p.classList.add('hidden');
+                });
+                
+                // Show selected price list
+                const gameId = tab.getAttribute('data-game');
+                document.getElementById(`${gameId}-prices`).classList.remove('hidden');
+            });
+        });
+        
+        // Smooth Scroll
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Top Up Modal
+        const topUpModal = document.getElementById('topUpModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalGameTitle = document.getElementById('modalGameTitle');
+        
+        function openTopUpModal(gameName) {
+            modalGameTitle.textContent = `Top Up ${gameName}`;
+            topUpModal.classList.remove('hidden');
+            topUpModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        closeModal.addEventListener('click', () => {
+            topUpModal.classList.add('hidden');
+            topUpModal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Success Modal
+        const successModal = document.getElementById('successModal');
+        const closeSuccessModal = document.getElementById('closeSuccessModal');
+        const topUpForm = document.getElementById('topUpForm');
+        
+        topUpForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Hide top up modal
+            topUpModal.classList.add('hidden');
+            topUpModal.classList.remove('flex');
+            
+            // Show success modal
+            successModal.classList.remove('hidden');
+            successModal.classList.add('flex');
+        });
+        
+        closeSuccessModal.addEventListener('click', () => {
+            successModal.classList.add('hidden');
+            successModal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Contact Form
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show success message
+            formSuccess.classList.remove('hidden');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96537ab27461ea7b',t:'MTc1MzUyODUyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
